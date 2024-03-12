@@ -187,3 +187,11 @@ button {
     transform: rotate(360deg);
   }
 }
+
+
+@media screen and (max-width: 480px) {
+  .form-box {
+    width: 90%;
+    min-height:450px;
+  }
+}
