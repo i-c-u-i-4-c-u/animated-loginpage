@@ -50,7 +50,7 @@ background-size: cover;
     border-radius: 20px;
  background:#96430c;
   z-index: 10;
-    inset: 2px;
+    inset: 3px;
    display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,7 @@ button {
 .form-box::before {
   content: "";
   position: absolute;
-  background: linear-gradient(0deg, transparent, #fff, #fff);
+  background: linear-gradient(#fff, #fff 70%, transparent);
   width: 400px;
   height:450px;
   border-radius: 8px;
@@ -167,15 +167,15 @@ button {
 .form-box::after {
   content: "";
   position: absolute;
-  background: linear-gradient(0deg, transparent, #fff, #fff);
+  background: linear-gradient(#fff, #fff 70%, transparent);
   width: 400px;
-    height:450px;
+  height:450px;
   border-radius: 8px;
   top: -50%;
   left: -50%;
   animation: animate 6s linear infinite;
-  transform-origin: bottom right;
   animation-delay: -3s;
+  transform-origin: bottom right;
 }
 
 @keyframes animate {
@@ -191,7 +191,22 @@ button {
 
 @media screen and (max-width: 480px) {
   .form-box {
+      width: 350px;
+      height:400px;
+  } 
+}
+
+@media screen and (max-width: 380px) {
+  .form-box {
+      width: 310px;
+      height:400px;
+      /* padding: 10px; */
+  } 
+
+  .input-box,
+  button {
     width: 90%;
-    min-height:450px;
+    margin-inline: auto;
+    display: block;
   }
 }
