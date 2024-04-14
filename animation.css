@@ -37,8 +37,6 @@ background-size: cover;
     position: relative;
     width: 400px;
     height:450px;
-/*     background: black; */
-/*     border: 2px solid rgba(255,255,255,0.5); */
     border-radius: 20px;
     backdrop-filter: blur(15px);
    
@@ -46,6 +44,7 @@ background-size: cover;
 }
 
 .form-value{
+  display:none;
   position: absolute;
     border-radius: 20px;
  background:#96430c;
@@ -157,7 +156,6 @@ button {
   background: linear-gradient(#fff, #fff 70%, transparent);
   width: 400px;
   height:450px;
-  border-radius: 8px;
   top: -50%;
   left: -50%;
   animation: animate 6s linear infinite;
@@ -170,7 +168,6 @@ button {
   background: linear-gradient(#fff, #fff 70%, transparent);
   width: 400px;
   height:450px;
-  border-radius: 8px;
   top: -50%;
   left: -50%;
   animation: animate 6s linear infinite;
@@ -204,7 +201,8 @@ button {
   } 
 
   .input-box,
-  button {
+  button,
+.forget {
     width: 90%;
     margin-inline: auto;
     display: block;
